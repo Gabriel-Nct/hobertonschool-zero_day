@@ -1,4 +1,3 @@
-README.md - Projet Git
 Description
 
 Ce projet initie à la gestion de versions avec Git et à l'utilisation de GitHub. Vous apprendrez à configurer et utiliser des dépôts, collaborer sur des branches, et suivre des pratiques de commits et de documentation.

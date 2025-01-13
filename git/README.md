@@ -1,6 +1,6 @@
-# Nom du Projet
+# Git
 
-Comment utiliser Git.
+## Comment utiliser Git.
 
 ## Installation
 

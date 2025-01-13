@@ -1,6 +1,6 @@
-#Git & GitHub Project
+# Git & GitHub Project
 
-##Table of Contents
+## Table of Contents
 
 1.  [Introduction](#introduction)
 2.  [Features](#features)
@@ -14,13 +14,13 @@
 
 ----------
 
-##Introduction
+## Introduction
 
 Ce projet vise à introduire les concepts fondamentaux de la gestion de code source avec Git et son intégration avec GitHub. Il s'agit d'un guide pratique pour apprendre à manipuler les dépôts Git, collaborer efficacement sur des projets, et maîtriser les commandes essentielles du terminal.
 
 ----------
 
-##Features
+## Features
 
 -   Création et gestion de dépôts Git locaux et distants.
 -   Rédaction et gestion de fichiers `README.md`.

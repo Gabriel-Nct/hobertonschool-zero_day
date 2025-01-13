@@ -1,101 +1,60 @@
-Git & GitHub Project
-Table of Contents
+#Git & GitHub Project
 
-    Introduction
-    Features
-    Requirements
-    Setup
-    Basic Usage
-    Common Commands
-    How It Works
-    Examples
-    Authors
+##Table of Contents
 
-Introduction
+1.  [Introduction](#introduction)
+2.  [Features](#features)
+3.  [Requirements](#requirements)
+4.  [Setup](#setup)
+5.  [Basic Usage](#basic-usage)
+6.  [Common Commands](#common-commands)
+7.  [How It Works](#how-it-works)
+8.  [Examples](#examples)
+9.  [Authors](#authors)
+
+----------
+
+##Introduction
 
 Ce projet vise à introduire les concepts fondamentaux de la gestion de code source avec Git et son intégration avec GitHub. Il s'agit d'un guide pratique pour apprendre à manipuler les dépôts Git, collaborer efficacement sur des projets, et maîtriser les commandes essentielles du terminal.
-Features
 
-    Création et gestion de dépôts Git locaux et distants.
-    Rédaction et gestion de fichiers README.md.
-    Collaboration sur des projets via des branches et des pull requests.
-    Résolution des conflits de fusion.
-    Utilisation de GitHub pour héberger et gérer des dépôts.
+----------
 
-Requirements
+##Features
 
-    Système d'exploitation : Ubuntu 20.04 LTS
-    Git : Version 2.25 ou supérieure.
-    Accès à Internet : Nécessaire pour interagir avec GitHub.
-    Compte GitHub : Créé et configuré avec un Personal Access Token.
-    Connaissances préalables : Aucune (idéal pour débutants).
+-   Création et gestion de dépôts Git locaux et distants.
+-   Rédaction et gestion de fichiers `README.md`.
+-   Collaboration sur des projets via des branches et des pull requests.
+-   Résolution des conflits de fusion.
+-   Utilisation de GitHub pour héberger et gérer des dépôts.
 
-Pré-requis pour l'installation de Git
+----------
 
-Si Git n'est pas installé :
+## Requirements
 
-$ sudo apt-get update  
-$ sudo apt-get upgrade  
-$ sudo apt-get install git  
+-   **Système d'exploitation :** Ubuntu 20.04 LTS
+-   **Git :** Version 2.25 ou supérieure.
+-   **Accès à Internet :** Nécessaire pour interagir avec GitHub.
+-   **Compte GitHub :** Créé et configuré avec un Personal Access Token.
+-   **Connaissances préalables :** Aucune (idéal pour débutants).
 
-Setup
+----------
 
-    Créer un dépôt GitHub :
-        Connectez-vous à GitHub et créez un dépôt public.
-        N'incluez pas de README.md, .gitignore, ou de licence.
+## How It Works
 
-    Cloner le dépôt sur votre machine locale :
+1.  **Initialisation** : Créez un dépôt local avec `git init`.
+2.  **Suivi des fichiers** : Ajoutez des fichiers au suivi Git avec `git add`.
+3.  **Historisation des modifications** : Utilisez `git commit` pour enregistrer les changements.
+4.  **Collaboration** : Travaillez sur des branches, fusionnez-les, et poussez vos contributions vers GitHub.
 
-$ git clone https://{TOKEN}@github.com/{USERNAME}/{REPOSITORY_NAME}.git  
+----------
 
-Ajouter un fichier README.md :
 
-$ echo "Mon premier projet GitHub !" > README.md  
+## Examples
 
-Ajouter, committer, et pousser les modifications :
+### Exemple : Création et gestion d'un dépôt
 
-    $ git add README.md  
-    $ git commit -m "Ajout du README.md"  
-    $ git push origin main  
-
-Basic Usage
-
-Les commandes de base pour travailler avec Git incluent :
-
-    Cloner un dépôt :
-
-$ git clone <repository_url>  
-
-Ajouter un fichier au suivi Git :
-
-$ git add <filename>  
-
-Committer des modifications :
-
-$ git commit -m "Message de commit"  
-
-Pousser les modifications vers GitHub :
-
-    $ git push origin <branch_name>  
-
-Common Commands
-Commande	Description	Exemple
-git status	Vérifie l'état des fichiers suivis.	$ git status
-git branch	Liste ou crée des branches.	$ git branch new-feature
-git checkout	Change de branche ou restaure un fichier.	$ git checkout main
-git merge	Fusionne une branche dans la branche courante.	$ git merge new-feature
-git pull	Récupère et fusionne les modifications distantes.	$ git pull origin main
-git log	Affiche l'historique des commits.	$ git log
-How It Works
-
-    Initialisation : Créez un dépôt local avec git init.
-    Suivi des fichiers : Ajoutez des fichiers au suivi Git avec git add.
-    Historisation des modifications : Utilisez git commit pour enregistrer les changements.
-    Collaboration : Travaillez sur des branches, fusionnez-les, et poussez vos contributions vers GitHub.
-
-Examples
-Exemple : Création et gestion d'un dépôt
-
+```bash
 # Initialisation d'un dépôt local
 $ git init  
 
@@ -108,8 +67,13 @@ $ git commit -m "Ajout de fichier.txt"
 
 # Pousser vers GitHub
 $ git remote add origin https://github.com/username/repo.git  
-$ git push -u origin main  
+$ git push -u origin main
+```
 
-Authors
+----------
 
-    Gabriel Bescond
+## Authors
+
+-   **Gabriel Bescond**
+
+

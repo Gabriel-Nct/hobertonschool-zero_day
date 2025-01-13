@@ -1,49 +1,115 @@
-Description
+Git & GitHub Project
+Table of Contents
 
-Ce projet initie à la gestion de versions avec Git et à l'utilisation de GitHub. Vous apprendrez à configurer et utiliser des dépôts, collaborer sur des branches, et suivre des pratiques de commits et de documentation.
-Objectifs d'apprentissage
+    Introduction
+    Features
+    Requirements
+    Setup
+    Basic Usage
+    Common Commands
+    How It Works
+    Examples
+    Authors
 
-À la fin de ce projet, vous devriez être capable de :
+Introduction
 
-    Expliquer la gestion de code source et distinguer Git de GitHub
-    Créer et configurer un dépôt Git
-    Rédiger un README efficace et des messages de commit clairs
-    Utiliser les commandes essentielles : clone, add, commit, push, pull
-    Travailler en équipe via les branches et la résolution de conflits
-    Comprendre les fichiers à inclure ou exclure (.gitignore)
+Ce projet vise à introduire les concepts fondamentaux de la gestion de code source avec Git et son intégration avec GitHub. Il s'agit d'un guide pratique pour apprendre à manipuler les dépôts Git, collaborer efficacement sur des projets, et maîtriser les commandes essentielles du terminal.
+Features
 
-Prérequis
+    Création et gestion de dépôts Git locaux et distants.
+    Rédaction et gestion de fichiers README.md.
+    Collaboration sur des projets via des branches et des pull requests.
+    Résolution des conflits de fusion.
+    Utilisation de GitHub pour héberger et gérer des dépôts.
 
-    README.md : obligatoire à la racine et dans le répertoire git
-    Utilisation de la ligne de commande pour toutes les opérations
-    Installation de Git (si nécessaire) :
+Requirements
 
-    $ sudo apt-get update
-    $ sudo apt-get install git
+    Système d'exploitation : Ubuntu 20.04 LTS
+    Git : Version 2.25 ou supérieure.
+    Accès à Internet : Nécessaire pour interagir avec GitHub.
+    Compte GitHub : Créé et configuré avec un Personal Access Token.
+    Connaissances préalables : Aucune (idéal pour débutants).
 
-Commandes Git essentielles
+Pré-requis pour l'installation de Git
 
-    Cloner un dépôt : git clone <repo>
-    Créer et ajouter un fichier : touch <file> && git add <file>
-    Commit : git commit -m "Message"
-    Pousser vers GitHub : git push origin main
-    Créer une branche : git branch <branch-name>
-    Fusionner une branche : git merge <branch-name>
+Si Git n'est pas installé :
 
-Structure du Projet
+$ sudo apt-get update  
+$ sudo apt-get upgrade  
+$ sudo apt-get install git  
 
-    Dossiers : bash, c, js
-    Fichiers :
-        bash/best et bash/school : scripts Bash
-        c/c_is_fun.c et fichiers js/main.js et js/index.js
+Setup
 
-Collaboration
+    Créer un dépôt GitHub :
+        Connectez-vous à GitHub et créez un dépôt public.
+        N'incluez pas de README.md, .gitignore, ou de licence.
 
-    Création de branches pour développer des fonctionnalités.
-    Résolution de conflits lors de la fusion.
-    Mise à jour locale : récupérer les modifications distantes.
+    Cloner le dépôt sur votre machine locale :
 
-Tâches avancées
+$ git clone https://{TOKEN}@github.com/{USERNAME}/{REPOSITORY_NAME}.git  
 
-    Résolution de conflits lors de la fusion de branches
-    Exclusion de fichiers (.gitignore)
+Ajouter un fichier README.md :
+
+$ echo "Mon premier projet GitHub !" > README.md  
+
+Ajouter, committer, et pousser les modifications :
+
+    $ git add README.md  
+    $ git commit -m "Ajout du README.md"  
+    $ git push origin main  
+
+Basic Usage
+
+Les commandes de base pour travailler avec Git incluent :
+
+    Cloner un dépôt :
+
+$ git clone <repository_url>  
+
+Ajouter un fichier au suivi Git :
+
+$ git add <filename>  
+
+Committer des modifications :
+
+$ git commit -m "Message de commit"  
+
+Pousser les modifications vers GitHub :
+
+    $ git push origin <branch_name>  
+
+Common Commands
+Commande	Description	Exemple
+git status	Vérifie l'état des fichiers suivis.	$ git status
+git branch	Liste ou crée des branches.	$ git branch new-feature
+git checkout	Change de branche ou restaure un fichier.	$ git checkout main
+git merge	Fusionne une branche dans la branche courante.	$ git merge new-feature
+git pull	Récupère et fusionne les modifications distantes.	$ git pull origin main
+git log	Affiche l'historique des commits.	$ git log
+How It Works
+
+    Initialisation : Créez un dépôt local avec git init.
+    Suivi des fichiers : Ajoutez des fichiers au suivi Git avec git add.
+    Historisation des modifications : Utilisez git commit pour enregistrer les changements.
+    Collaboration : Travaillez sur des branches, fusionnez-les, et poussez vos contributions vers GitHub.
+
+Examples
+Exemple : Création et gestion d'un dépôt
+
+# Initialisation d'un dépôt local
+$ git init  
+
+# Ajout d'un fichier
+$ echo "Mon fichier de test" > fichier.txt  
+$ git add fichier.txt  
+
+# Commit des modifications
+$ git commit -m "Ajout de fichier.txt"  
+
+# Pousser vers GitHub
+$ git remote add origin https://github.com/username/repo.git  
+$ git push -u origin main  
+
+Authors
+
+    Gabriel Bescond
